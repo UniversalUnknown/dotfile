@@ -1,0 +1,3 @@
+[submodule ".local/kwin/scripts/kwin-forceblur"]
+	path = .local/kwin/scripts/kwin-forceblur
+	url = https://github.com/taj-ny/kwin-effects-forceblur.git

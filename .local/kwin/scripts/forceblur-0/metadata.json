@@ -1,0 +1,21 @@
+{
+  "name": "Force Blur",
+  "description": "Force-enable Blur effect for certain windows",
+  "icon": "preferences-system-windows-script-test",
+  "api": "declarativescript",
+  "mainScript": "ui/main.qml",
+  "author": {
+    "name": "Eon S. Jeon",
+    "email": "esjeon@hyunmu.am"
+  },
+  "pluginInfo": {
+    "name": "forceblur",
+    "version": "0.6",
+    "license": "MIT"
+  },
+  "type": "Service",
+  "serviceTypes": [
+    "KWin/Script"
+  ],
+  "configModule": "kwin/effects/configs/kcm_kwin4_genericscripted"
+}

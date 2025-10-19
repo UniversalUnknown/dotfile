@@ -1,0 +1,43 @@
+general {
+    colors = true
+    interval = 5
+}
+
+order += "disk /"
+order += "run_watch DHCP"
+order += "wireless wlan0"
+order += "ethernet eth0"
+order += "battery 0"
+order += "cpu_usage"
+order += "load"
+order += "time"
+
+disk "/" {
+    format = "%avail"
+}
+
+wireless wlan0 {
+    format_up = "W: %quality"
+    format_down = "W: down"
+}
+
+ethernet eth0 {
+    format_up = "E: %ip"
+    format_down = "E: down"
+}
+
+battery 0 {
+    format = "%status %percentage %remaining"
+}
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+load {
+    format = "Load: %1min"
+}
+
+time {
+    format = "%Y-%m-%d %H:%M:%S"
+}
